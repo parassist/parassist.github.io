@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="PARAssist">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PARAssist: A Framework for Personalized and Adaptive Robotic Assistance from Ambiguous User Requests</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+
+  <meta property="og:site_name" content="PARAssist" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PARAssist" />
+  <meta property="og:description" content="Anonymous Research Submission" />
+  <meta property="og:url" content="https://anonymous-parassist.github.io/" />
+  <meta property="article:publisher" content="#" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="PARAssist" />
+  <meta name="twitter:description" content="Anonymous Research Submission" />
+  <meta name="twitter:url" content="https://anonymous-parassist.github.io/" />
+  <meta name="twitter:site" content="@anonymous" />
+</head>
+
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths has-text-centered">
+          <h1 class="title is-1 publication-title">PARAssist: A Framework for Personalized and Adaptive Robotic Assistance from Ambiguous User Requests</h1>
+          <div class="is-size-3 publication-authors">
+            Anonymous Authors
+          </div>
+          
+          <!-- Links removed for anonymous submission -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color: #f8f9fa; padding: 40px 0;">
+  <div class="container">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Service robots may encounter ambiguous user requests that require context-aware inference. Users may also have unique preferences with certain tasks when requesting robotic assistance. We introduce PARAssist (Personalized and Adaptive Robotic Assistance), a unique architecture for disambiguating requests in a personalized manner for service robots. PARAssist utilizes vision-language models to determine the physical and cognitive demands of a user's tasks, and passively learns user preferences for assistance by contrasting the demands of tasks a user performs independently with those they request from the robot. When an ambiguous request is received, task candidates are generated from the history of the user's actions, activities, locations, conversations, and requests, as well as the current user and environment state. Task candidates are then evaluated against the learned user preference model, to suggest suitable assistance options. Experiments conducted with PARAssist show that personalization can align disambiguation with the task demands of a user's prior assistance requests. An ablation study confirms the contributions of PARAssist's main components in personalizing disambiguation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <h2 class="title is-2" style="text-align: center;">Video</h2>
+        <video controls controlsList="nodownload" autoplay loop muted playsinline src="./static/PARAssist_video.mp4" poster="./resources/loading-icon.gif" style="width: 100%; max-width: 1100px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" oncontextmenu="return false;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <!-- Architecture Title and Description -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">PARAssist Architecture</h2>
+        <div class="content has-text-justified">
+          <p>
+            A robot passively observes a user via visual and auditory inputs and analyzes user actions (red lines). To assist based on a user request, the robot uses the stored user data and generates and evaluates multiple candidate tasks to assist (green dashed lines).
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Architecture Image -->
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <img src="./static/parassist.png" alt="PARAssist Architecture Diagram" style="width: 100%; max-width: 1100px; margin: 20px auto; display: block;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template from <a href="https://robot-parkour.github.io/"><span class="dnerf">Robot Parkour Learning</span></a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
